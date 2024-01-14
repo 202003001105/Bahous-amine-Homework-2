@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Player Profiles</title>
+    <link rel="stylesheet" type="text/css" href="design.css">
+</head>
+<body>
+    <header>
+        <h2>Player Profiles</h2>
+    </header>
+
+    <nav>
+        <!-- button for the dropdown menu in the top-left corner -->
+        <button class="menu-btn" onclick="toggleDropdown()">Menu</button>
+        <ul id="dropdown" class="dropdown-content">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Page1.html">Latest News</a></li>
+            <li><a href="page2.html">Match Schedules</a></li>
+            <li><a href="page3.html">Player Profiles</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <p>Explore the careers of some of the world's most talented football players. Learn about their journey, achievements, and stats.</p>
+        <img src="https://www.themeboy.com/wp-content/uploads/sportspress-pro-player-profile-example.jpg" alt="Player Profile">
+        <p>For more football news and updates, visit <a href="https://www.skysports.com/football/story-telling/11669/11955430/the-champions-player-profiles" target="_blank">Sky Sports Football the-champions-player-profiles</a>.</p>
+       
+    </section>
+
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById("dropdown");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

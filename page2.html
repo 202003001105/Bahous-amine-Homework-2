@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upcoming Football Matches</title>
+    <link rel="stylesheet" type="text/css" href="design.css">
+</head>
+<body>
+    <header>
+        <h2>Upcoming Football Matches</h2>
+    </header>
+
+    <nav>
+        <!-- button for the dropdown menu in the top-left corner -->
+        <button class="menu-btn" onclick="toggleDropdown()">Menu</button>
+        <ul id="dropdown" class="dropdown-content">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Page1.html">Latest News</a></li>
+            <li><a href="page2.html">Match Schedules</a></li>
+            <li><a href="page3.html">Player Profiles</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <p>Never miss a game! Check out the schedule for all upcoming football matches here.</p>
+        <img src="https://e0.365dm.com/23/08/1600x900/skysports-premier-league-premier-league-prediction_6251549.jpg?20230815130611" alt="Match Schedule">
+        <p>For more football news and updates, visit <a href="https://www.skysports.com/football-fixtures" target="_blank">Sky Sports Football football-fixtures</a>.</p>
+        
+    </section>
+
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById("dropdown");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
+
